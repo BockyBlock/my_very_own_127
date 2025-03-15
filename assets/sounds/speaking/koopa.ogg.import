@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/koopa.ogg-2f4d8e57775e75a53b471f03dd602e0c.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/speaking/koopa.ogg"
+dest_files=[ "res://.import/koopa.ogg-2f4d8e57775e75a53b471f03dd602e0c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

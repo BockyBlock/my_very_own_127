@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes/actors/objects/friendly_koopa/koopa_face.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://scenes/actors/objects/npc_base/npc_base.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/actors/objects/koopa_troopa/color_frames.tres" type="SpriteFrames" id=3]
+[ext_resource path="res://scenes/actors/objects/friendly_koopa/texture.png" type="Texture" id=4]
+[ext_resource path="res://scenes/actors/objects/friendly_koopa/friendly_koopa.gd" type="Script" id=5]
+[ext_resource path="res://scenes/actors/objects/friendly_koopa/friendly_logo.png" type="Texture" id=6]
+[ext_resource path="res://scenes/actors/mario/FluddAnimSync.gd" type="Script" id=7]
+
+[sub_resource type="SpriteFrames" id=58]
+animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "walking",
+"speed": 9.5
+} ]
+
+[node name="KoopaNPC" instance=ExtResource( 2 )]
+script = ExtResource( 5 )
+
+[node name="AnimationHandler" parent="KinematicBody2D" index="2"]
+position = Vector2( -1, -7 )
+head_positions = {
+"running": PoolVector2Array( -2, -3, -2, -4, -2, -5, -2, -4, -3, -3, -3, -4, -3, -5, -3, -5 ),
+"standing": PoolVector2Array( -1, -4, -1, -5 )
+}
+expression_offsets = {
+"happy": Vector2( -1, 0 ),
+"shocked": Vector2( -1, 0 )
+}
+confuse_rotation = false
+raging_anim = false
+
+[node name="Body" type="AnimatedSprite" parent="KinematicBody2D/AnimationHandler" index="0"]
+position = Vector2( 1, 7 )
+frames = SubResource( 58 )
+
+[node name="Color" type="AnimatedSprite" parent="KinematicBody2D/AnimationHandler/Body" index="0"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 1, 0 )
+frames = ExtResource( 3 )
+playing = true
+script = ExtResource( 7 )
+
+[node name="Head" type="AnimatedSprite" parent="KinematicBody2D/AnimationHandler" index="1"]
+position = Vector2( -1, -4 )
+frames = ExtResource( 1 )
+animation = "neutral"
+
+[node name="FriendlyLogo" type="Sprite" parent="KinematicBody2D" index="3"]
+visible = false
+position = Vector2( 8, 8 )
+texture = ExtResource( 6 )

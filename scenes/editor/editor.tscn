@@ -1,4 +1,4 @@
-[gd_scene load_steps=1615 format=2]
+[gd_scene load_steps=1618 format=2]
 
 [ext_resource path="res://scenes/editor/bounds_control_button.gd" type="Script" id=1]
 [ext_resource path="res://scenes/shared/shared.tscn" type="PackedScene" id=2]
@@ -1580,6 +1580,9 @@
 [ext_resource path="res://scenes/actors/objects/big_bush/palettes/6/icon.png" type="Texture" id=1578]
 [ext_resource path="res://scenes/actors/objects/big_bush/palettes/6/big_bush.png" type="Texture" id=1579]
 [ext_resource path="res://scenes/actors/objects/small_bush/palettes/6/small_bush.png" type="Texture" id=1580]
+[ext_resource path="res://scenes/actors/objects/brick/brick.png" type="Texture" id=1581]
+[ext_resource path="res://scenes/actors/objects/brick/icon.png" type="Texture" id=1582]
+[ext_resource path="res://scenes/actors/objects/friendly_koopa/icon.png" type="Texture" id=1583]
 
 [sub_resource type="StreamTexture" id=1]
 load_path = "res://.import/icon.png-b79c93c9218fd28768c5a71f04f70e98.stex"
@@ -2751,6 +2754,15 @@ object_center = Vector2( 16, 16 )
 item_name = "Neon Sign"
 icon = ExtResource( 1563 )
 preview = ExtResource( 1564 )
+
+[node name="KoopaNPC" type="Node" parent="PlaceableItems/DialogueGruop"]
+script = ExtResource( 24 )
+object_id = 207
+is_object = true
+object_center = Vector2( 8, 8 )
+tile_mode_step = 16
+icon = ExtResource( 1583 )
+preview = ExtResource( 130 )
 
 [node name="SwitchesGroup" type="Node" parent="PlaceableItems"]
 script = ExtResource( 25 )
@@ -5260,6 +5272,28 @@ palette_icons = [ ExtResource( 1573 ), ExtResource( 1570 ), ExtResource( 1575 ),
 palette_previews = [ ExtResource( 1573 ), ExtResource( 1570 ), ExtResource( 1575 ), ExtResource( 1571 ), ExtResource( 1574 ), ExtResource( 1572 ) ]
 icon = ExtResource( 1573 )
 preview = ExtResource( 1573 )
+
+[node name="BrickBlock" type="Node" parent="PlaceableItems/ModGroup"]
+script = ExtResource( 24 )
+object_id = 206
+is_object = true
+object_center = Vector2( 16, 16 )
+item_name = "Brick Block"
+change_to = "MetalBreakableBlock"
+items_in_sequence = 3
+icon = ExtResource( 1582 )
+preview = ExtResource( 1581 )
+
+[node name="KoopaNPC" type="Node" parent="PlaceableItems/ModGroup"]
+script = ExtResource( 24 )
+object_id = 207
+is_object = true
+object_center = Vector2( 8, 8 )
+tile_mode_step = 16
+change_to = "ParaTroopa"
+items_in_sequence = 2
+icon = ExtResource( 1583 )
+preview = ExtResource( 130 )
 
 [node name="Options" type="CanvasLayer" parent="."]
 layer = 128

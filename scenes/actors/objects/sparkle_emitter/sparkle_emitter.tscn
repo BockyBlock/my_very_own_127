@@ -8,13 +8,13 @@
 [ext_resource path="res://scenes/actors/mario/particles/sparkles.png" type="Texture" id=6]
 [ext_resource path="res://scenes/actors/mario/particles/shine_sparkles.png" type="Texture" id=7]
 
-[sub_resource type="CanvasItemMaterial" id=5]
+[sub_resource type="CanvasItemMaterial" id=4]
 particles_animation = true
 particles_anim_h_frames = 5
 particles_anim_v_frames = 1
 particles_anim_loop = false
 
-[sub_resource type="ParticlesMaterial" id=6]
+[sub_resource type="ParticlesMaterial" id=5]
 resource_local_to_scene = true
 emission_shape = 1
 emission_sphere_radius = 24.0
@@ -37,10 +37,10 @@ script = ExtResource( 2 )
 textures = [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 4 ) ]
 
 [node name="Particles2D" type="Particles2D" parent="."]
-material = SubResource( 5 )
+material = SubResource( 4 )
 amount = 14
 visibility_rect = Rect2( -200, -100, 400, 200 )
-process_material = SubResource( 6 )
+process_material = SubResource( 5 )
 texture = ExtResource( 1 )
 
 [node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]

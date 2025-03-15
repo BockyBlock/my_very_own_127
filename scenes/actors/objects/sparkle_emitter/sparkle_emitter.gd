@@ -7,9 +7,9 @@ onready var particles = $Particles2D
 
 export var color := Color(1, 1, 1)
 export var rainbow := false
-export var rate := 14
-export var radius := 24
-export var lifetime := 1
+export var rate := 14.0
+export var radius := 24.0
+export var lifetime := 1.0
 
 func _set_properties():
 	savable_properties = ["color", "rainbow", "rate", "radius", "lifetime"]

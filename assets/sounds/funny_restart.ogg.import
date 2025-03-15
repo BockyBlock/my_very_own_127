@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/funny_restart.ogg-9b4bade200c4ffd20cf994c0cf436a9a.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/funny_restart.ogg"
+dest_files=[ "res://.import/funny_restart.ogg-9b4bade200c4ffd20cf994c0cf436a9a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

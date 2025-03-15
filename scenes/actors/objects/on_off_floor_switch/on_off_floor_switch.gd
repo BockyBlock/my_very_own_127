@@ -90,6 +90,7 @@ func _physics_process(delta):
 						press(hit_body.global_position)
 				elif hit_body.name.begins_with("Dayzee") and hit_body.rainbow:
 					press(hit_body.global_position)
+					pressed = true
 
 func update_switch_state():
 	if !self_activated:

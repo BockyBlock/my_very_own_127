@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/thwomp_grunt.ogg-5de159c1c7c1b7eb0e809e7eaf5fe6e5.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/speaking/thwomp_grunt.ogg"
+dest_files=[ "res://.import/thwomp_grunt.ogg-5de159c1c7c1b7eb0e809e7eaf5fe6e5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

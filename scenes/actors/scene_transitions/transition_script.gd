@@ -4,6 +4,7 @@ onready var canvas_background = $Background
 onready var canvas_mask = $Light2D
 onready var tween = $Tween
 onready var transition_audio = $TransitionAudio
+onready var restart_audio = $FunnyRestartSound
 
 signal transition_finished
 
@@ -34,6 +35,7 @@ func reload_scene(transition_in_tex = cutout_circle, transition_out_tex = cutout
 			Singleton.CurrentLevelData.area = new_area
 			
 		if r_press:
+			play_retry_audio()
 			GhostArrays.reload = get_tree().reload_current_scene()
 		
 		yield(get_tree().create_timer(0.1), "timeout")
@@ -100,3 +102,7 @@ func do_transition_animation(transition_texture : StreamTexture = cutout_circle,
 
 func play_transition_audio():
 	transition_audio.play()
+
+
+func play_retry_audio():
+	restart_audio.play()

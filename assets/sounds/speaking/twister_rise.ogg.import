@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/twister_rise.ogg-38bc1e5ab96f380df540d36bd2c54b17.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/speaking/twister_rise.ogg"
+dest_files=[ "res://.import/twister_rise.ogg-38bc1e5ab96f380df540d36bd2c54b17.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,18 @@
+amp -					https://soundeffects.fandom.com/wiki/Sound_Ideas,_ELECTRICITY,_SPARK_-_HIGH_VOLTAGE_SPARK,_ELECTRICAL_01
+beep -					Super Mario 64 (used when opening certain UIs)
+clock -					Super Mario 64 (used by various gadgets)
+rex_smashed -			https://soundeffects.fandom.com/wiki/Hollywoodedge,_Bull_Roar_Medium_Pers_PE022301#Audio_Samples
+rex_tall - 				https://soundeffects.fandom.com/wiki/SKYWALKER,_COW_BELLOW
+twinkle - 				https://soundeffects.fandom.com/wiki/SM64_Star_Sparkle_Sound
+wiggler -				Super Mario 64 (used for Wiggler's dialogue)
+nipper - 				https://freesound.org/people/msLineOn/sounds/754928/ (edited)
+bobomb -				Super Mario 64 (used for friendly Bob-ombs)
+dayzee - 				https://freesound.org/people/3bagbrew/sounds/72940/ (edited)
+invisibility - 			Super Mario Maker 2 (used when fighting Boom Boom in 3D World)
+koopa - 				Super Mario Maker 2 (used when a Koopa tries to recover its shell)
+creak - 				Super Mario 3D World (several donut block sounds)
+spikey - 				Super Mario 3D World (used when timed spike blocks activate)
+twister_rise - 			Super Mario Maker 2 (used for Twisters in 3D World)
+car - 					Super Mario Maker 2 (used when a driving Koopa sees Mario)
+bubble - 				Super Mario Maker 2
+flop -					Super Mario Maker 2 (used for Cheep Cheeps leaving bottomless pits in 3D World)

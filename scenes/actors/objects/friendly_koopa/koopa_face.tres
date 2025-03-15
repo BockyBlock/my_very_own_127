@@ -1,0 +1,78 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=2]
+
+[ext_resource path="res://scenes/actors/objects/friendly_koopa/face.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 72, 0, 24, 32 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 168, 0, 24, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 120, 0, 24, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 48, 0, 24, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 144, 0, 24, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 24, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 24, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 24, 0, 24, 32 )
+
+[resource]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": false,
+"name": "angry",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": false,
+"name": "confused",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": false,
+"name": "happy",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": false,
+"name": "neutral",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 5 ) ],
+"loop": false,
+"name": "raging",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 6 ) ],
+"loop": false,
+"name": "shocked",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": false,
+"name": "smiling",
+"speed": 0.0
+}, {
+"frames": [ SubResource( 8 ), SubResource( 4 ), SubResource( 8 ), SubResource( 7 ) ],
+"loop": true,
+"name": "talking",
+"speed": 6.0
+} ]
