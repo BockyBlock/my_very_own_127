@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/funny_orb.ogg-cc7e6c1590ac610be7ee85d852e7b944.oggstr"
+
+[deps]
+
+source_file="res://scenes/actors/objects/orbed/funny_orb.ogg"
+dest_files=[ "res://.import/funny_orb.ogg-cc7e6c1590ac610be7ee85d852e7b944.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

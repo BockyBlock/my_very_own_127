@@ -1,4 +1,4 @@
-[gd_scene load_steps=1618 format=2]
+[gd_scene load_steps=1620 format=2]
 
 [ext_resource path="res://scenes/editor/bounds_control_button.gd" type="Script" id=1]
 [ext_resource path="res://scenes/shared/shared.tscn" type="PackedScene" id=2]
@@ -1583,6 +1583,8 @@
 [ext_resource path="res://scenes/actors/objects/brick/brick.png" type="Texture" id=1581]
 [ext_resource path="res://scenes/actors/objects/brick/icon.png" type="Texture" id=1582]
 [ext_resource path="res://scenes/actors/objects/friendly_koopa/icon.png" type="Texture" id=1583]
+[ext_resource path="res://scenes/actors/objects/car/car.png" type="Texture" id=1584]
+[ext_resource path="res://scenes/actors/objects/orbed/orb.png" type="Texture" id=1585]
 
 [sub_resource type="StreamTexture" id=1]
 load_path = "res://.import/icon.png-b79c93c9218fd28768c5a71f04f70e98.stex"
@@ -5283,6 +5285,24 @@ change_to = "MetalBreakableBlock"
 items_in_sequence = 3
 icon = ExtResource( 1582 )
 preview = ExtResource( 1581 )
+
+[node name="Car!!" type="Node" parent="PlaceableItems/ModGroup"]
+script = ExtResource( 24 )
+object_id = 208
+is_object = true
+object_center = Vector2( 16, 16 )
+item_name = "Car"
+icon = ExtResource( 1584 )
+preview = ExtResource( 1584 )
+
+[node name="Orb" type="Node" parent="PlaceableItems/ModGroup"]
+script = ExtResource( 24 )
+object_id = 209
+is_object = true
+object_center = Vector2( 16, 16 )
+item_name = "Orb"
+icon = ExtResource( 1585 )
+preview = ExtResource( 1585 )
 
 [node name="KoopaNPC" type="Node" parent="PlaceableItems/ModGroup"]
 script = ExtResource( 24 )
